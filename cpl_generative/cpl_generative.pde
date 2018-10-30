@@ -6,7 +6,7 @@ CustomShape deviceRight = new CustomShape();
 
 void setup() {
   size(400, 400);
-  /* draw top of device */
+  /* define top of device */
   deviceTop.addPoint(200, 178);
   deviceTop.addPoint(37, 84);
   deviceTop.addPoint(83, 38);
@@ -15,7 +15,7 @@ void setup() {
   deviceTop.addPoint(261, 10);
   deviceTop.addPoint(317, 38);
   deviceTop.addPoint(363, 84);
-  /* draw bottom left of device */
+  /* define bottom left of device */
   deviceLeft.addPoint(181, 211);
   deviceLeft.addPoint(181, 400);
   deviceLeft.addPoint(118, 383);
@@ -24,7 +24,7 @@ void setup() {
   deviceLeft.addPoint(5, 242);
   deviceLeft.addPoint(1, 180);
   deviceLeft.addPoint(18, 117);
-  /* draw bottom right of device */
+  /* define bottom right of device */
   deviceRight.addPoint(219, 211);
   deviceRight.addPoint(382, 117);
   deviceRight.addPoint(399, 180);
