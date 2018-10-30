@@ -6,6 +6,7 @@ CustomShape deviceRight = new CustomShape();
 
 void setup() {
   size(400, 400);
+  /* draw top of device */
   deviceTop.addPoint(200, 178);
   deviceTop.addPoint(37, 84);
   deviceTop.addPoint(83, 38);
@@ -14,6 +15,7 @@ void setup() {
   deviceTop.addPoint(261, 10);
   deviceTop.addPoint(317, 38);
   deviceTop.addPoint(363, 84);
+  /* draw bottom left of device */
   deviceLeft.addPoint(181, 211);
   deviceLeft.addPoint(181, 400);
   deviceLeft.addPoint(118, 383);
@@ -22,6 +24,7 @@ void setup() {
   deviceLeft.addPoint(5, 242);
   deviceLeft.addPoint(1, 180);
   deviceLeft.addPoint(18, 117);
+  /* draw bottom right of device */
   deviceRight.addPoint(219, 211);
   deviceRight.addPoint(382, 117);
   deviceRight.addPoint(399, 180);
@@ -33,12 +36,13 @@ void setup() {
   smooth();
 }
 
+/* code adapted from forum snippet, see readme */
 void draw() {
   background(255);
   randomSeed(mouseX+mouseY);
   noStroke();
   fill(0);
-  for (int i=0; i<500; i++) {
+  for (int i=0; i<100; i++) {
     float x = random(width);
     float y = random(height);
     if (deviceTop.contains(x, y)) {
@@ -53,6 +57,7 @@ void draw() {
   }
 }
 
+/* define how to draw polygons */
 class CustomShape extends Polygon {
  
   void display() {
