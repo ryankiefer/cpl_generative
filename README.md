@@ -11,3 +11,4 @@ Also really my notes for myself.
  - circles should not overlap with other circles
    - (maybe [this git](https://github.com/martymcguire/ThingiverseCollage/blob/master/ThingiverseCollage.pde) can help figure that out?)
  - possibly ability to set one circle to be larger than the others (idk how to even do this)
+   - basic initial GUI to accomplish this upon applet load
